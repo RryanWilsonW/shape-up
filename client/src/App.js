@@ -9,19 +9,23 @@ import Nav from "./components/Nav/Nav";
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-      </Routes>
-      <Routes>
-        <Route path="/fitness" element={<FitnessPage />}></Route>
-      </Routes>
-      <Routes>
-        <Route path="/journal" element={<JournalPage />}></Route>
-      </Routes>
-      <Routes>
-        <Route path="/nutrition" element={<NutritionPage />}></Route>
-      </Routes>
+      <div>
+        <Nav />
+      </div>
+      <div className="pages">
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/fitness" element={<FitnessPage />}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/journal" element={<JournalPage />}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/nutrition" element={<NutritionPage />}></Route>
+        </Routes>
+      </div>
     </div>
   );
 }
